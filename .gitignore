@@ -5,7 +5,7 @@ ethernet/vivado/ethernet.runs/
 ethernet/vivado/ethernet.hw/
 ethernet/vivado/ethernet.gen/
 
-blink_a_led/blink_a_led.cache/
-blink_a_led/blink_a_led.runs/
-blink_a_led/blink_a_led.hw/
-blink_a_led/blink_a_led.gen/
+blink_a_led/vivado/blink_a_led.cache/
+blink_a_led/vivado/blink_a_led.runs/
+blink_a_led/vivado/blink_a_led.hw/
+blink_a_led/vivado/blink_a_led.gen/

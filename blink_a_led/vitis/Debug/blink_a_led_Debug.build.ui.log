@@ -1,0 +1,25 @@
+2021-03-27T17:07:17.765216200255-17:07:17 **** Build of configuration Debug for project blink_a_led ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/main.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Kris/workspace/soc_wrapper_1/export/soc_wrapper_1/sw/soc_wrapper_1/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+000-'Finished building: ../src/main.c'
+000-' '
+000-'Building target: blink_a_led.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Kris/workspace/soc_wrapper_1/export/soc_wrapper_1/sw/soc_wrapper_1/standalone_domain/bsplib/lib -o "blink_a_led.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-'Finished building target: blink_a_led.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size blink_a_led.elf  |tee "blink_a_led.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  26928	   1152	  22616	  50696	   c608	blink_a_led.elf
+000-'Finished building: blink_a_led.elf.size'
+000-' '
+00255-
+17:07:24 Build Finished (took 6s.781ms)
+

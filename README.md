@@ -20,3 +20,6 @@ The blink_a_led design uses the ZYNQ IP with the following components enabled:
  -SD card
  -UART
  -DDR
+ 
+ 
+![Board](img/board_top.jpg)
