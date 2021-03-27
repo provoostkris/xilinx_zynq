@@ -22,4 +22,4 @@ The blink_a_led design uses the ZYNQ IP with the following components enabled:
  -DDR
  
  
-![Board](img/board_top.jpg)
+![Board](/img/board_top.jpg)
