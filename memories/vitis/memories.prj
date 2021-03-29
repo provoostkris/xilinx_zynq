@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="memories" location="D:/github/xilinx_zynq/memories/vitis" platform="C:/Users/Kris/workspace/soc_wrapper_2/export/soc_wrapper_2/soc_wrapper_2.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="memories_system" sysConfig="soc_wrapper_2" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="84eac8297931f4c33b0525242f17321c">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1250993370" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1325759149" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
