@@ -9,3 +9,8 @@ blink_a_led/vivado/blink_a_led.cache/
 blink_a_led/vivado/blink_a_led.runs/
 blink_a_led/vivado/blink_a_led.hw/
 blink_a_led/vivado/blink_a_led.gen/
+
+memories/vivado/memories.cache/
+memories/vivado/memories.runs/
+memories/vivado/memories.hw/
+memories/vivado/memories.gen/
