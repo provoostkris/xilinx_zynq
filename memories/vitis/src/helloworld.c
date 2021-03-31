@@ -1,34 +1,12 @@
-/******************************************************************************
-*
-* Copyright (C) 2009 - 2014 Xilinx, Inc.  All rights reserved.
-*
-* Permission is hereby granted, free of charge, to any person obtaining a copy
-* of this software and associated documentation files (the "Software"), to deal
-* in the Software without restriction, including without limitation the rights
-* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-* copies of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be included in
-* all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
-* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-* SOFTWARE.
-*
-* Except as contained in this notice, the name of the Xilinx shall not be used
-* in advertising or otherwise to promote the sale, use or other dealings in
-* this Software without prior written authorization from Xilinx.
-*
-******************************************************************************/
+/*
+MEMORY
+{
+   axi_bram_ctrl_0_Mem0 : ORIGIN = 0x60000000,  LENGTH = 0x2000
+   ps7_ddr_0 :            ORIGIN = 0x100000,    LENGTH = 0x1FF00000
+   ps7_ram_0 :            ORIGIN = 0x0,         LENGTH = 0x30000
+   ps7_ram_1 :            ORIGIN = 0xFFFF0000,  LENGTH = 0xFE00
+}
+*/
 
 /*
  * helloworld.c: simple test application
@@ -52,27 +30,47 @@
 #include "xil_io.h"
 
 
+int mem_test(u32 Reg32Addr, u32 Reg32Data)
+{
+    int i;
+    for (i = 1; i < 11; ++i)
+      {
+    	Reg32Addr = Reg32Addr + 0x4;
+		Reg32Data = Reg32Data + 0x11112222;
+		Xil_Out32(Reg32Addr,Reg32Data);
+
+		Reg32Data = Xil_In32(Reg32Addr);
+		xil_printf("Data : 0x%08x \n", Reg32Data);
+      }
+    return 0;
+}
+
 int main()
 {
-
     u32 Reg32Addr;
     u32 Reg32Data;
 
     init_platform();
 
-    print("Hello World\n\r");
+    print("\n Accessing BRAM @0x60000000 \n\r");
+    Reg32Addr = 0x100000;
+    Reg32Data = 0x00000000;
+    mem_test(Reg32Addr, Reg32Data);
 
-    Reg32Addr = 0x60000000;
+    print("\n Accessing ps7_ddr_0 @0x100000 \n\r");
+    Reg32Addr = 0x100000;
+    Reg32Data = 0x00000000;
+    mem_test(Reg32Addr, Reg32Data);
 
-    Reg32Data = Xil_In32(Reg32Addr);
-    xil_printf("Data : 0x%08x \n\r", Reg32Data);
+    print("\n Accessing ps7_ram_0 @0x0 \n\r");
+    Reg32Addr = 0x0;
+    Reg32Data = 0x00000000;
+    mem_test(Reg32Addr, Reg32Data);
 
-    Reg32Data = Reg32Data + 0x11112222;
-    Xil_Out32(Reg32Addr,Reg32Data);
-
-    Reg32Data = Xil_In32(Reg32Addr);
-    xil_printf("Data : 0x%08x \n\r", Reg32Data);
-
+    print("\n Accessing ps7_ram_1 @0xFFFF0000 \n\r");
+    Reg32Addr = 0xFFFF0000;
+    Reg32Data = 0x00000000;
+    mem_test(Reg32Addr, Reg32Data);
 
     cleanup_platform();
     return 0;
