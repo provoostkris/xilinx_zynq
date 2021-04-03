@@ -14,3 +14,8 @@ memories/vivado/memories.cache/
 memories/vivado/memories.runs/
 memories/vivado/memories.hw/
 memories/vivado/memories.gen/
+
+data_transfers/vivado/data_transfers.cache/
+data_transfers/vivado/data_transfers.runs/
+data_transfers/vivado/data_transfers.hw/
+data_transfers/vivado/data_transfers.gen/
