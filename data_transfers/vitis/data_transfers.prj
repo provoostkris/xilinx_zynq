@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
-<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="data_transfers" location="D:/github/xilinx_zynq/data_transfers/vitis" platform="C:/Users/Kris/workspace/soc_wrapper_3/export/soc_wrapper_3/soc_wrapper_3.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="data_transfers_system" sysConfig="soc_wrapper_3" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="32bc12045ea5f21d6577391f11eb1ae5">
-  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.173937364" dirty="true">
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="data_transfers" location="D:/github/xilinx_zynq/data_transfers/vitis" platform="C:/Users/Kris/workspace/soc_wrapper_4/export/soc_wrapper_4/soc_wrapper_4.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="data_transfers_system" sysConfig="soc_wrapper_4" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="21b384da56806359c2fad4dc118969ca">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.765694776" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.177270803" dirty="true">
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1165575774" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
   <template appTemplateName="hello_world"/>

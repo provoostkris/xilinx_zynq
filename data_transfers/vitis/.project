@@ -3,7 +3,7 @@
 	<name>data_transfers</name>
 	<comment>Created by Vitis v2019.2</comment>
 	<projects>
-		<project>soc_wrapper_3</project>
+		<project>soc_wrapper_4</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

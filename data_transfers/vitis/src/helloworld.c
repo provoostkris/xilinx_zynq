@@ -1,4 +1,3 @@
-
 /*
  * helloworld.c: simple test application
  *
@@ -18,12 +17,15 @@
 #include "platform.h"
 #include "xil_printf.h"
 
+#include "xaxicdma.h"
 
 int main()
 {
     init_platform();
 
     print("Hello World\n\r");
+
+
 
     cleanup_platform();
     return 0;
