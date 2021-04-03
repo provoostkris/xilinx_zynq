@@ -1249,22 +1249,22 @@
       }
     },
     "interface_nets": {
+      "smartconnect_0_M00_AXI": {
+        "interface_ports": [
+          "smartconnect_0/M00_AXI",
+          "axi_cdma_0/S_AXI_LITE"
+        ]
+      },
       "processing_system7_0_MDIO_ETHERNET_0": {
         "interface_ports": [
           "MDIO_ETHERNET_0_0",
           "processing_system7_0/MDIO_ETHERNET_0"
         ]
       },
-      "processing_system7_0_FIXED_IO": {
+      "smartconnect_0_M01_AXI": {
         "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
-        ]
-      },
-      "processing_system7_0_GPIO_0": {
-        "interface_ports": [
-          "GPIO_0_0",
-          "processing_system7_0/GPIO_0"
+          "processing_system7_0/S_AXI_GP0",
+          "smartconnect_0/M01_AXI"
         ]
       },
       "processing_system7_0_DDR": {
@@ -1279,10 +1279,10 @@
           "smartconnect_0/S01_AXI"
         ]
       },
-      "smartconnect_0_M01_AXI": {
+      "processing_system7_0_GPIO_0": {
         "interface_ports": [
-          "processing_system7_0/S_AXI_GP0",
-          "smartconnect_0/M01_AXI"
+          "GPIO_0_0",
+          "processing_system7_0/GPIO_0"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {
@@ -1291,10 +1291,10 @@
           "smartconnect_0/S00_AXI"
         ]
       },
-      "smartconnect_0_M00_AXI": {
+      "processing_system7_0_FIXED_IO": {
         "interface_ports": [
-          "smartconnect_0/M00_AXI",
-          "axi_cdma_0/S_AXI_LITE"
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
         ]
       }
     },
@@ -1363,6 +1363,70 @@
           "smartconnect_0/aresetn",
           "axi_cdma_0/s_axi_lite_aresetn"
         ]
+      }
+    },
+    "addressing": {
+      "/processing_system7_0": {
+        "address_spaces": {
+          "Data": {
+            "segments": {
+              "SEG_axi_cdma_0_Reg": {
+                "address_block": "/axi_cdma_0/S_AXI_LITE/Reg",
+                "offset": "0x7E210000",
+                "range": "64K"
+              },
+              "SEG_processing_system7_0_GP0_DDR_LOWOCM": {
+                "address_block": "/processing_system7_0/S_AXI_GP0/GP0_DDR_LOWOCM",
+                "offset": "0x00000000",
+                "range": "1",
+                "is_excluded": "TRUE"
+              },
+              "SEG_processing_system7_0_GP0_IOP": {
+                "address_block": "/processing_system7_0/S_AXI_GP0/GP0_IOP",
+                "offset": "0xE0000000",
+                "range": "4M",
+                "is_excluded": "TRUE"
+              },
+              "SEG_processing_system7_0_GP0_M_AXI_GP0": {
+                "address_block": "/processing_system7_0/S_AXI_GP0/GP0_M_AXI_GP0",
+                "offset": "0x40000000",
+                "range": "512M",
+                "is_excluded": "TRUE"
+              }
+            }
+          }
+        }
+      },
+      "/axi_cdma_0": {
+        "address_spaces": {
+          "Data": {
+            "segments": {
+              "SEG_axi_cdma_0_Reg": {
+                "address_block": "/axi_cdma_0/S_AXI_LITE/Reg",
+                "offset": "0x7E200000",
+                "range": "64K",
+                "is_excluded": "TRUE"
+              },
+              "SEG_processing_system7_0_GP0_DDR_LOWOCM": {
+                "address_block": "/processing_system7_0/S_AXI_GP0/GP0_DDR_LOWOCM",
+                "offset": "0x00000000",
+                "range": "512M"
+              },
+              "SEG_processing_system7_0_GP0_IOP": {
+                "address_block": "/processing_system7_0/S_AXI_GP0/GP0_IOP",
+                "offset": "0xE0000000",
+                "range": "4M",
+                "is_excluded": "TRUE"
+              },
+              "SEG_processing_system7_0_GP0_M_AXI_GP0": {
+                "address_block": "/processing_system7_0/S_AXI_GP0/GP0_M_AXI_GP0",
+                "offset": "0x40000000",
+                "range": "512M",
+                "is_excluded": "TRUE"
+              }
+            }
+          }
+        }
       }
     }
   }
