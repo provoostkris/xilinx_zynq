@@ -19,3 +19,6 @@ data_transfers/vivado/data_transfers.cache/
 data_transfers/vivado/data_transfers.runs/
 data_transfers/vivado/data_transfers.hw/
 data_transfers/vivado/data_transfers.gen/
+
+
+peripherals/
