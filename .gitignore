@@ -21,4 +21,10 @@ data_transfers/vivado/data_transfers.hw/
 data_transfers/vivado/data_transfers.gen/
 
 
+hdmi/vivado/hdmi.cache/
+hdmi/vivado/hdmi.runs/
+hdmi/vivado/hdmi.hw/
+hdmi/vivado/hdmi.gen/
+
+
 peripherals/

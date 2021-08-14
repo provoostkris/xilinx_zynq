@@ -3,7 +3,7 @@
 ### Hardware
 A QMTECH ZYNQ starter kit is used in these examples.
 The board contains a ZYNQ 7010 FPGA, which is the smallest device in the Z-7000 family.
-It contains a dual core ARM and an FPGA with 28.000 cells.
+It contains a dual core ARM and an FPGA with 17.000 LUT and 35.000 DFF.
 
 ### blink_a_led
 A test run of the board.

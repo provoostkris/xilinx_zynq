@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="hdmi" location="D:/github/xilinx_zynq/hdmi/vitis" platform="C:/Users/Kris/workspace2019/hdmi_1/export/hdmi_1/hdmi_1.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="hdmi_system" sysConfig="hdmi_1" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="fb443270ffa403843fd834577b13b165">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.97448343" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1045704426" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

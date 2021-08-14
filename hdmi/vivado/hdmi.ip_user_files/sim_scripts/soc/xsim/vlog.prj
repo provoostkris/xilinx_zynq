@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../hdmi.gen/sources_1/bd/soc/ipshared/ec67/hdl" --include "../../../../hdmi.gen/sources_1/bd/soc/ipshared/34f8/hdl" \
+"../../../bd/soc/ip/soc_processing_system7_0_0/sim/soc_processing_system7_0_0.v" \
+"../../../bd/soc/ip/soc_xlconcat_0_0/sim/soc_xlconcat_0_0.v" \
+"../../../bd/soc/ip/soc_xlconcat_1_0/sim/soc_xlconcat_1_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
