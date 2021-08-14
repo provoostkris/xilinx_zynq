@@ -5,7 +5,10 @@ A QMTECH ZYNQ starter kit is used in these examples.
 The board contains a ZYNQ 7010 FPGA, which is the smallest device in the Z-7000 family.
 It contains a dual core ARM and an FPGA with 17.000 LUT and 35.000 DFF.
 
-### blink_a_led
+### The board overview
+![Board](/img/board_top.JPG)
+
+### [Blink a LED](/blink_a_led)
 A test run of the board.
 The blink_a_led design uses the ZYNQ IP with the following components enabled:
  -Ethernet
@@ -14,7 +17,7 @@ The blink_a_led design uses the ZYNQ IP with the following components enabled:
  -DDR
 The vitis project files and source code are added, when this is deployed to the board it will simply blink the LED next to the GPIO header.
 
-### Ethernet
+### [Ethernet](/ethernet)
 A test run of the board.
 The Ethernet design uses the ZYNQ IP with the following components enabled:
  -Ethernet
@@ -22,7 +25,7 @@ The Ethernet design uses the ZYNQ IP with the following components enabled:
  -UART
  -DDR
 
-### data_transfers
+### [Data Transfers](data_transfers)
 The data_transfers design uses the ZYNQ IP with the following components enabled:
  -Ethernet
  -SD card
@@ -33,7 +36,7 @@ Additionally in the PL there is addition of the following components
  -smartconnect
 The purpose is to have a reference hardware to test DMA transfers
 
-### memories
+### [Memories](/memories)
 The memories design uses the ZYNQ IP with the following components enabled:
  -Ethernet
  -SD card
@@ -46,5 +49,5 @@ Additionally in the PL there is addition of the following components
  -reset controller
 The purpose is to have a reference hardware to test access to the memories (RAM and BRAM)
 
-### The board overview
-![Board](/img/board_top.JPG)
+### [HDMI](/hdmi)
+Pattern generator and HDMI interface controller. All in PL fabric.
