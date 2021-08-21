@@ -14,4 +14,6 @@ No user input required
 ### Example output
 The design is tested with a samsung 4K monitor. 
 The image contains a color flicker. 
-This is likely due to the jumper wires and breakout board.
+![monitor](/hdmi/img/monitor.jpg)
+This is likely due to the jumper wires and breakout board...
+![adapter](/hdmi/img/adapter.jpg)
