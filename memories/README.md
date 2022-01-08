@@ -4,7 +4,7 @@ Connect the USB cable to the serial port and cofigure to 115200 baud.
 Run the program on the board from the Vitis software via the JTAG interface and watch the serial log
 
 Serial Console output :
-
+```
  Accessing BRAM @0x60000000 
 
 Data : 0x11112222 
@@ -57,3 +57,4 @@ Data : 0x88891110
 Data : 0x999A3332 
 Data : 0xAAAB5554 
 
+```

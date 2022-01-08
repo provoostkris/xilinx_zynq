@@ -16,7 +16,7 @@ Connected to COM8 at 115200
 -----lwIP TCP echo server ------
 
 TCP packets sent to port 6001 will be echoed back
-
+```
 Start PHY autonegotiation 
 Waiting for PHY to complete autonegotiation.
 autonegotiation complete 
@@ -30,8 +30,9 @@ Netmask : 255.255.255.0
 Gateway : 192.168.1.1
 
 TCP echo server started @ port 7
-
+```
 ##### Console terminal
+```
 Microsoft Windows [Version 10.0.18362.295]
 (c) 2019 Microsoft Corporation. Alle rechten voorbehouden.
 
@@ -54,3 +55,4 @@ Interface: 192.168.1.100 --- 0xb
   Internet Address      Physical Address      Type
   192.168.1.10          00-0a-35-00-01-02     dynamic
   ...
+```
